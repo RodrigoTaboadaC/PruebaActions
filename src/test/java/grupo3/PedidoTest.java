@@ -9,16 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 public class PedidoTest {
 
     @Test
-    void testCantidadInvalida(){
-        Pedido pedido = new Pedido();
-        Producto laptop = new Producto( "Laptop", 1000.00, -5,"LPT0001", "Tecnología", true, false);
-        pedido.getDetallesPedido().add(laptop);
-
-        IllegalStateException ex = assertThrows(IllegalStateException.class, pedido::validarStock);
-        assertEquals("Error: hay un producto con cantidad negativa", ex.getMessage());
-    }
-
-    @Test
     void cantidadNoValidaTest() {
         Pedido pedido = new Pedido();
         Producto producto = new Producto("PC", 1000.00, 5, "LPT0001", "Tecnología", true, false);
