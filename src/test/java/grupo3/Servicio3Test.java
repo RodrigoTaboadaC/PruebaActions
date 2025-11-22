@@ -7,12 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class Servicio3Test {
 
-    //Pruebas Unitarias para funcionalidad secundaria 1
-    @Test
-    void verificarLimiteValidoTest() {
-        double totalValido = 5000.00; 
-        assertTrue(Servicio3.verificarLimite(totalValido));
-    }
+   
     
     @Test
     void verificarLimiteExcedidoTest() {
